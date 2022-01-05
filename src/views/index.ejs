@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECO Table Memorizer</title>
+  </head>
+  <body>
+    <table>
+      <% var keys = Object.keys(codes) %> <% for(var i=0; i < keys.length; i++)
+      { %>
+      <tr>
+        <td style="padding: 10px"><%= keys[i] %></td>
+        <td>
+          <%= codes[keys[i]].name %> <br />
+          <%= codes[keys[i]].move %>
+        </td>
+      </tr>
+      <% } %>
+    </table>
+  </body>
+</html>
